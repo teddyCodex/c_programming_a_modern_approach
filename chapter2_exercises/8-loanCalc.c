@@ -21,7 +21,7 @@ float monthly_bal(float loan, float monthlyRate, float repay_amount)
 // function to calculate and print loan balance till loan is fully repaid.
 int loanCalc(float loan, float rate, float repay_amount, float months_in_year)
 {
-  printf("Loan Repayment Calculator\n*************************\n");
+  printf("\nLoan Repayment Calculator\n*************************\n");
 
   float monthlyRate = monthly_int(rate, months_in_year);
 
@@ -34,7 +34,7 @@ int loanCalc(float loan, float rate, float repay_amount, float months_in_year)
     startMonth++;
     if (loan <= repay_amount)
     {
-      printf("Month %02d: Congrats! Loan is fully repaid!\n", startMonth);
+      printf("Month %02d: Congrats! Loan is fully repaid!\n\n", startMonth);
     }
   }
 
