@@ -12,8 +12,8 @@ int main(void)
     printf("\nEnter a two digit number: ");
     scanf("%d", &n);
 
-    first_digit = n / 10;  // assigns first digit of 'a' to 'b'
-    second_digit = n % 10; // assigns last digit of 'a' to 'c'
+    first_digit = n / 10;  // assigns first digit of 'n' to 'first_digit'
+    second_digit = n % 10; // assigns last digit of 'a' to 'second_digit'
 
     printf("The reversal is %d%d\n\n", second_digit, first_digit);
 
