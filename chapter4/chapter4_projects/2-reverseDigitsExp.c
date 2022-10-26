@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * Program reverses two digits entered by user
+ * Program reverses three digits entered by user
  * Assumption - positive integers only.
  */
 
