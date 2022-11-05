@@ -35,18 +35,18 @@ int main(void)
 	d2 = ean % 10;
 	d1 = ean / 10;
 
-	printf("%d\n", d11);
-	printf("%d %d %d %d %d %d %d %d %d %d %d %d\n", d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12);
+	// printf("%d\n", d11);
+	// printf("%d %d %d %d %d %d %d %d %d %d %d %d\n", d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12);
 
-	//sum1 = d1 + d3 + d5 + d7 + d9 + d11;
-	//sum2 = d2 + d4 + d6 + d8 + d10;
-	//total = 3 * sum1 + sum2;
-	//check = 9 - ((total - 1) % 10);
+	sum1 = d2 + d4 + d6 + d8 + d10 + d12;
+	sum2 = d1 + d3 + d5 + d7 + d9 + d11;
+	total = 3 * sum1 + sum2;
+	check = 9 - ((total - 1) % 10);
 
 	// printf("sum 1 = %d\n", sum1);
 	// printf("sum 2 = %d\n", sum2);
 	// printf("total = %d\n", total);
-	// printf("Check Digit is %d\n", check);
+	printf("Check Digit is %d\n", check);
 
 	return 0;
 }
