@@ -23,6 +23,7 @@ int main(void)
         printf("Equivalent 12-hour time: ");
         switch (hours)
         {
+        case 0:
         case 1:
         case 2:
         case 3:
@@ -87,3 +88,5 @@ int main(void)
 
 // not sure how to represent 24:00 as 12:00 AM.
 // Will figure this out later.
+
+// Figured it out! :D
