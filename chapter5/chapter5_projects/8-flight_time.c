@@ -111,10 +111,22 @@ int main(void)
         at_mins = at8 % 60;
     }
 
-    if (dt_hours < 12)
-        printf("Closest departure is %02d:%02d a.m, arriving at %02d:%02d a.m\n", dt_hours, dt_mins, at_hours, at_mins);
+    printf("-------------------------------------------------------\n");
+    if (dt_hours == 12)
+    {
+        printf("Closest departure is %02d:%02d p.m, arriving at %02d:%02d p.m\n", dt_hours, dt_mins, at_hours - 12, at_mins);
+    }
+    else if (dt_hours < 12)
+    {
+        if (at_hours < 12)
+            printf("Closest departure is %02d:%02d a.m, arriving at %02d:%02d a.m\n", dt_hours, dt_mins, at_hours, at_mins);
+        else
+            printf("Closest departure is %02d:%02d a.m, arriving at %02d:%02d p.m\n", dt_hours, dt_mins, at_hours - 12, at_mins);
+    }
     else
-        printf("Closest departure is %02d:%02d p.m, arriving at %02d:%02d p.m\n", dt_hours, dt_mins, at_hours, at_mins);
+    {
+        printf("Closest departure is %02d:%02d p.m, arriving at %02d:%02d p.m\n", dt_hours - 12, dt_mins, at_hours - 12, at_mins);
+    }
 
     printf("\n");
     return 0;
