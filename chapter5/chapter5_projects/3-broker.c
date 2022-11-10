@@ -8,6 +8,10 @@
  * Over $500,000       =   $255 + 0.09%
  */
 
+// Program update - ask user to input value of shares and price per share
+// $33 + 3cents per share for less than 2000 shares
+// $33 + 2cents per share for more than 2000 shares
+
 #include <stdio.h>
 
 int main(void)
